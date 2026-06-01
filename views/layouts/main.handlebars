@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria | Home</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {{{_sections.head}}}
+    <script src="/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container" id="background">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/img/icons/logo_alexandria.png" alt="logo-alexandria">
+            </div>
+            <nav>
+                <div class="meuslivros-link">
+                    <a href="#">Meus Livros</a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button" id="dropbtn">Categorias&#9662</button>
+                    <div class="dropdown-content" id="dropcontent">
+                        <a href="#">Títulos Conhecidos</a>
+                        <a href="#">Clássicos</a>
+                        <a href="#">História</a>
+                        <a href="#">Filosofia</a>
+                        <a href="#">Economia</a>
+                        <a href="#">Computação/Programação</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <form action="/livros" method="get">
+                        <input type="text" id="buscar" name="search" placeholder="Buscar"
+                        style="background-image: url('/img/icons/searchbar_icon.png');">
+                    </form>
+                </div>
+                <div class="btns">
+                    <a href="/views/login.html"><button id="btn1">Entrar</button></a>
+                    <a href="/views/cadastro.html"><button id="btn2">Cadastrar-se</button></a>
+                </div>
+            </nav>
+        </div>
+        <div class="content-container">
+            {{{ body }}}
+        </div>
+        <div class="footer">
+            <div class="footer-block">
+                <h3>Navegar</h3>
+                <a href="#">Início</a>
+                <a href="#">Meus Livros</a>
+            </div>
+            <div class="footer-block">
+                <h3>Institucional</h3>
+                <a href="#">Quem Somos</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+            </div>
+            <div class="footer-block">
+                <h3>Ajuda</h3>
+                <a href="#">Central de Ajuda</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="footer-block">
+                <h3>Redes Sociais</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

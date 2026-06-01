@@ -1,0 +1,27 @@
+{{#section 'head'}}
+<link rel="stylesheet" href="/css/livros.css">
+{{/section}}
+<div class="content-box">
+    <div class="box-title">
+        <h2>Buscar Livros</h2>
+    </div>
+    <div class="books">
+        <ul class="books-list">
+            {{#each livros}}
+            <li class="book-list-item">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="/img/books/{{this.titulo}}.png" alt="capa do livro {{this.titulo}}">
+                    </div>
+                    <div class="card-text">
+                        <h3>{{this.titulo}}</h3>
+                        <div class="autor"><a href="#">de {{autores.nome}}</a></div>
+                        <div class="preco"><p>R$ {{this.preco}}</p></div>
+                        <button>Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>

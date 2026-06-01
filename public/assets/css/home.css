@@ -1,0 +1,87 @@
+/* Conteúdo Principal */
+.content-container {
+    display: flex;
+    padding: 25px 75px 75px 75px;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 0.4rem;
+    border: 1px solid #96969681;
+    overflow: hidden;
+}
+
+.box-title h2 {
+    margin-top: 25px;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.features {
+    display: flex;
+}
+
+.feature {
+    display: flex;
+    background-color: rgba(245, 245, 220, 0.300);
+    padding: 15px;
+    border-radius: 0.5rem;
+    border: 1px solid #96969681;
+    width: 33.3%;
+}
+
+.first-feature {
+    margin: 25px 20px 50px 50px;
+}
+
+.second-feature {
+    margin: 25px 0 50px 0;
+}
+
+.third-feature {
+    margin: 25px 50px 50px 20px;
+}
+
+.third-feature-icon {
+    align-self: center;
+    margin-right: 5px;
+}
+
+.third-feature img {
+    width: 130px;
+    height: 130px;
+}
+
+.content-box a {
+    font-size: 1.1rem;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    color: #0068cf;
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    overflow-x: auto;
+}
+
+.carousel-item {
+    flex: 0 0 20%;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.carousel-item img {
+    width: 150px;
+    height: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 0.2rem;
+    box-shadow: 1px 2px 5px 0 #888888;
+}
